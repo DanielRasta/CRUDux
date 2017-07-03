@@ -4,7 +4,7 @@ import {create%%model_name_camel%%} from '../actions/crud'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-let create%%model_name_camel%%Form = props => {
+let Create%%model_name_camel%%Form = props => {
   const { handleSubmit } = props
 
   return (
@@ -54,7 +54,7 @@ class Create%%model_name_camel%% extends React.Component {
         </div>
 
         <div>
-          <create%%model_name_camel%%Form onSubmit={this.submit} />
+          <Create%%model_name_camel%%Form onSubmit={this.submit} />
         </div>
 
       </div>
@@ -62,10 +62,10 @@ class Create%%model_name_camel%% extends React.Component {
   }
 }
 
-create%%model_name_camel%%Form = reduxForm({
+Create%%model_name_camel%%Form = reduxForm({
   validate,
   form: 'create-%%model_name_lower%%-form'
-})(create%%model_name_camel%%Form)
+})(Create%%model_name_camel%%Form)
 
 function mapStateToProps(state)
 {

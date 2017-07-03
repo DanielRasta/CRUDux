@@ -50,3 +50,18 @@ replace_variables "$DIRECTORY_NAME/components/update.js"
 
 echo "Running npm-install"
 sh npm_prerequisites.sh
+
+echo "-----------------------------------------------------------------------------------------------"
+echo "Almost done.."
+echo "Please do the following to use the new CRUDuX code in your app"
+echo "* Import /$MODEL_NAME$PLURAL_SUFFIX/actions/crud.js to your action creators index"
+
+echo "* Include the generated reducers in your state"
+echo "** Import /$MODEL_NAME$PLURAL_SUFFIX/reducers/error-$MODEL_NAME_LOWER-reducer.js to your combineReducers"
+echo "** Import /$MODEL_NAME$PLURAL_SUFFIX/reducers/single-$MODEL_NAME_LOWER-reducer.js to your combineReducers"
+echo "** Import /$MODEL_NAME$PLURAL_SUFFIX/reducers/$MODEL_NAME_LOWER-reducer.js to your combineReducers"
+
+echo "* Route the path to the new components"
+echo "** /$MODEL_NAME$PLURAL_SUFFIX/components/new.js"
+echo "** /$MODEL_NAME$PLURAL_SUFFIX/components/update.js"
+echo "** /$MODEL_NAME$PLURAL_SUFFIX/components/index.js"

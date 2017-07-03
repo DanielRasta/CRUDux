@@ -2,7 +2,7 @@ import _ from "lodash";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getAll%%model_name_camel%%,delete%%model_name_camel%% } from "../actions/crud";
-import {TodoInstance} from './instance'
+import {%%model_name_camel%%Instance} from './instance'
 import { Link } from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ class %%model_name_camel%%Index extends Component {
       return (
         <li className="list-group-item" key={obj.id}>
           <%%model_name_camel%%Instance id={obj} />
-          <Link to={`/${obj.id}`}>Update</Link>
+          <Link to={`/%%model_name_camel%%/${obj.id}`}>Update</Link>
           <Button value="Delete" onClick={() => this.deleteObject(obj.id)} />
         </li>
       );
@@ -43,8 +43,7 @@ class %%model_name_camel%%Index extends Component {
 
 function mapStateToProps(state) {
   // use your master reducer to map state to props here
-  return
-  {
+  return {
     instances: []
   };
 }

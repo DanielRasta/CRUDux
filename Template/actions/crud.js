@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // CONSTS
 const BASE_URL = "http://localhost:3000"
-const MODEL_PATH = "/%%model_name_camel%%"
+const MODEL_PATH = "%%model_name_camel%%"
 
 // Action Names
 export const CREATED = 'CREATED_%%model_name_upper%%';
@@ -159,7 +159,7 @@ export function getAll%%model_name_camel%%()
     request.then(({data}) => {
       dispatch(
         {
-          type: DELETED,
+          type: GET_ALL,
           payload: data
         }
       );

@@ -20,8 +20,7 @@ class %%model_name_camel%%Instance extends Component {
 
 function mapStateToProps(state) {
   // use your master reducer to map state to props here
-  return
-  {
+  return {
     instance: []
   };
 }

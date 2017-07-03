@@ -4,7 +4,7 @@ import {update%%model_name_camel%%} from '../actions/crud'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-let update%%model_name_camel%%Form = props => {
+let Update%%model_name_camel%%Form = props => {
   const { handleSubmit, obj } = props
 
   return (
@@ -53,7 +53,7 @@ class Update%%model_name_camel%% extends React.Component {
         </div>
 
         <div>
-          <create%%model_name_camel%%Form onSubmit={this.submit} obj={this.props.object}/>
+          <Update%%model_name_camel%%Form onSubmit={this.submit} obj={this.props.object}/>
         </div>
 
       </div>
@@ -61,10 +61,10 @@ class Update%%model_name_camel%% extends React.Component {
   }
 }
 
-update%%model_name_camel%%Form = reduxForm({
+Update%%model_name_camel%%Form = reduxForm({
   validate,
   form: 'update-%%model_name_camel%%-form'
-})(update%%model_name_camel%%Form)
+})(Update%%model_name_camel%%Form)
 
 function mapStateToProps(state)
 {
